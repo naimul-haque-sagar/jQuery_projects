@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Movie Search</title>
+	<link rel="stylesheet" href="/api-operation/css/style.css">
+	<link rel="stylesheet"
+		  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+	<div class="col-md-6 option-button">
+		<a onclick="watch()" class="btn btn-primary"href="#">Watch List</a>
+	</div>
+</div>
+
+<div class="container">
+	<div class="col-md-6 search-bar">
+		<h3 class="text-center">Search By Movie Name</h3>
+		<form id="search-bar">
+			<input type="text" class="form-control" id="search-keyword"
+				   placeholder="search .....">
+		</form>
+	</div>
+</div>
+
+<div class="container">
+	<div id="all-movies" class="all-movies-row"></div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="/api-operation/js/search-movie.js"></script>
+<script src="/api-operation/js/movie-info.js"></script>
+<script src="/api-operation/js/save-movie-info.js"></script>
+<script src="/api-operation/js/watchList.js"></script>
+<script src="/api-operation/js/get-movie-poster.js"></script>
+</body>
+</html>

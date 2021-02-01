@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Movie Details Input</title>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <form id="movie-details">
+            <div class="form-group">
+                <label for="movieName">Movie Name:</label>
+                <input type="text" class="form-control" id="movieName" placeholder="Enter Movie Name" name="movieName">
+            </div>
+            <div class="form-group">
+                <label for="ratings">Movie Ratings:</label>
+                <input type="text" class="form-control" id="ratings" placeholder="Enter Movie Ratings" name="ratings">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <div id="get-details">
+
+        </div>
+        <button id="details-button">Get Details</button>
+    </div>
+
+    <div class="container">
+        <form id="search-by">
+            <div>Delete By Name :</div>
+            <input type="text" class="form-control" id="search-by-movieName"
+                   placeholder="delete .....">
+        </form>
+    </div>
+
+    <div class="container">
+        <form id="search">
+            <div>Delete By Id :</div>
+            <input type="text" class="form-control" id="delete-by-id"
+                   placeholder="delete .....">
+        </form>
+    </div>
+
+    <div class="container">
+        <form id="update-movie-details">
+            <div class="form-group">
+                <label for="id-update">Movie Id:</label>
+                <input type="text" class="form-control" id="id-update" placeholder="Enter Movie Name" name="movieName">
+            </div>
+            <div class="form-group">
+                <label for="movieName-update">Movie Name:</label>
+                <input type="text" class="form-control" id="movieName-update" placeholder="Enter Movie Name" name="movieName">
+            </div>
+            <div class="form-group">
+                <label for="ratings-update">Movie Ratings:</label>
+                <input type="text" class="form-control" id="ratings-update" placeholder="Enter Movie Ratings" name="ratings">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="module" src="/api-operation/movie-details-operation/js/send-data.js"></script>
+    <script type="module" src="/api-operation/movie-details-operation/js/receive-data.js"></script>
+</body>
+</html>

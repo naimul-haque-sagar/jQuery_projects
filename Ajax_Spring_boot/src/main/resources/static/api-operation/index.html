@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crud</title>
+    <link rel="stylesheet" href="/api-operation/css/style.css">
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <h1 class="text-center">Ajax Crud</h1>
+    <div class="row">
+        <form class="col-sm-5" id="input-form">
+            <h2 class="text-center">Add / Update </h2>
+            <div>
+                <label for="movie-name" class="form-label">Movie Name </label>
+                <input type="text" class="form-control" id="movie-name">
+            </div>
+            <div>
+                <label for="ratings" class="form-label">Ratings</label>
+                <input type="text" class="form-control" id="ratings">
+            </div>
+            <button type="submit" class="btn-btn-primary" id="submit-button">Save</button>
+            <div id="success-message"></div>
+        </form>
+
+        <div class="col-sm-7 text-center">
+            <h2>Show Info</h2>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Address</th>
+                </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <form class="col-sm-5" id="input-form1">
+        <h2 class="text-center">Add / Update </h2>
+        <div id="hide-it">
+            <label for="index-id" class="form-label">Id</label>
+            <input type="text" class="form-control" id="index-id">
+        </div>
+        <div>
+            <label for="first-name1" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="first-name1">
+        </div>
+        <div>
+            <label for="last-name1" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="last-name1">
+        </div>
+        <div>
+            <label for="email1" class="form-label">Email </label>
+            <input type="text" class="form-control" id="email1">
+        </div>
+        <div>
+            <label for="address1" class="form-label">Address</label>
+            <input type="text" class="form-control" id="address1">
+        </div>
+        <button type="submit" class="btn-btn-primary" id="submit-button1">Save</button>
+        <div id="success-message1"></div>
+    </form>
+
+</div>
+
+<script type="module" src="/api-operation/js/send-data.js"></script>
+<script type="module" src="/api-operation/js/receive-data.js"></script>
+</body>
+</html>

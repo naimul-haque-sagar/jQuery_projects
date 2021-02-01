@@ -1,0 +1,23 @@
+.search-bar{
+	margin-left:25%;
+	margin-bottom:20px;
+}
+
+.option-button{
+	margin-left:39%;
+	margin-top:20px;
+	margin-bottom:10px;
+}
+
+#all-movies .col-md-4 .individual-movie{
+	height:390px;
+}
+
+#all-movies .col-md-4 img{
+	height:240px;
+}
+
+.done{
+    color:green;
+    text-decoration:line-through;
+}

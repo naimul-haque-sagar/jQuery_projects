@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Movie Details Input</title>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <form id="movie-details">
+            <div class="form-group">
+                <label for="movieName">Movie Name:</label>
+                <input type="text" class="form-control" id="movieName" placeholder="Enter Movie Name" name="movieName">
+            </div>
+            <div class="form-group">
+                <label for="city">Movie Release City:</label>
+                <input type="text" class="form-control" id="city" placeholder="Enter Movie Release City" name="country">
+            </div>
+            <div class="form-group">
+                <label for="country">Movie Release Country:</label>
+                <input type="text" class="form-control" id="country" placeholder="Enter Movie Release Country" name="country">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <div id="get-details">
+
+        </div>
+        <form id="search-bar">
+            <input type="text" class="form-control" id="search-keyword"
+                   placeholder="search .....">
+        </form>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="module" src="/api-operation/movie-releasePlace-operation/js/send-data.js"></script>
+    <script type="module" src="/api-operation/movie-releasePlace-operation/js/received-data.js"></script>
+</body>
+</html>

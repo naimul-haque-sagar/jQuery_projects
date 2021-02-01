@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Movie Artists Input</title>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <form id="movie-artists">
+            <div class="form-group">
+                <label for="movieName">Movie Name:</label>
+                <input type="text" class="form-control" id="movieName" placeholder="Enter Movie Name" name="movieName">
+            </div>
+            <div class="form-group">
+                <label for="director">Movie Director:</label>
+                <input type="text" class="form-control" id="director" placeholder="Enter Movie Director" name="director">
+            </div>
+            <div class="form-group">
+                <label for="actor">Movie Actor:</label>
+                <input type="text" class="form-control" id="actor" placeholder="Enter Movie Actor" name="actor">
+            </div>
+            <div class="form-group">
+                <label for="actress">Movie Actress:</label>
+                <input type="text" class="form-control" id="actress" placeholder="Enter Movie Actress" name="actress">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <div id="get-details">
+
+        </div>
+        <form id="search-bar">
+            <input type="text" class="form-control" id="search-keyword"
+                   placeholder="search .....">
+        </form>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="module" src="/api-operation/movie-artist-operation/js/send-data.js"></script>
+    <script type="module" src="/api-operation/movie-artist-operation/js/received-data.js"></script>
+</body>
+</html>
